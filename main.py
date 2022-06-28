@@ -6,14 +6,19 @@ from kivy.uix.label import Label
 
 
 class Calculator(App):
+    
     def build(self):
+        
         rootWidget = BoxLayout(orientation='vertical')
         outputLabel = Label(size_hint_y=1)
         buttonSymbols = ('1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '.', '0', '*', '/', '=')
         buttonGrid = GridLayout(cols=4, size_hint_y=2)
+        
         for symbol in buttonSymbols:
             buttonGrid.add_widget(Button(text=symbol, font_size=30, bold=True))
+            
         clearButton = Button(text='Clear', size_hint_y=None, font_size=25, bold=True, height=100)
+        
         exitButton = Button(text='Exit', size_hint_y=None, font_size=25, bold=True, height=100)
 
         def printButtonText(instance):
