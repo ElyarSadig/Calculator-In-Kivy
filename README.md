@@ -1,2 +1,4 @@
 # Calculator-In-Kivy
-A Simple Calculator
+A Simple Calculator In Kivy
+
+Good for beginners in python and kivy.
